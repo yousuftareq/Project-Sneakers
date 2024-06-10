@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="./favicon_io/android-chrome-512x512.png" sizes="64x64">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css">
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>Project Sneaker</title>
+</head>
+
+<body>
+  <!-- <header class="header-part"> -->
+    <header class="header" id="header">
+        <nav class="nav container">
+           <a href="#" class="nav__logo">Project Sneakers</a>
+
+           <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                 <li>
+                    <a href="index.html" class="nav__link">Home</a>
+                 </li>
+
+                 <li>
+                    <a href="#" class="nav__link">Contact</a>
+                 </li>
+              </ul>
+
+              <!-- Close button -->
+              <div class="nav__close" id="nav-close">
+                 <i class="ri-close-large-line"></i>
+              </div>
+
+              <div class="nav__social">
+                 <a href="https://www.facebook.com/" target="_blank" class="nav__social-link">
+                    <i class="ri-facebook-circle-line"></i>
+                 </a>
+
+                 <a href="https://www.instagram.com/project__sneakers/?utm_source=qr" target="_blank" class="nav__social-link">
+                    <i class="ri-instagram-line"></i>
+                 </a>
+
+                 <a href="https://twitter.com/" target="_blank" class="nav__social-link">
+                    <i class="ri-twitter-x-line"></i>
+                 </a>
+              </div>
+           </div>
+
+           <div class="nav__toggle" id="nav-toggle">
+              <i class="ri-apps-2-line"></i>
+           </div>
+        </nav>
+     </header>
+    <div class="container">
+      <form class="signup-form" action="https://api.web3forms.com/submit" method="POST">
+        <h2>How can we help you?</h2>
+        <div class="form-group">
+          <input type="hidden" name="access_key" value="1005aa5f-587e-4322-833d-1adf4d88281a">
+          <label for="fullname">Full Name <span>*</span></label>
+          <input type="text" id="fullname" name="fullname" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address <span>*</span></label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <!-- <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required>
+        </div> -->
+        
+        <div class="form-group">
+          <label for="query">Query <span>*</span></label>
+          <textarea name="query" id="query"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+
+<script>feather.replace();</script>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+<script src="https://web3forms.com/client/script.js" async defer></script>
+</body>
+</html>
